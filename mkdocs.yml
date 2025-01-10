@@ -1,0 +1,116 @@
+site_name: hotdog24.de
+site_url: ""
+site_description: Eine minimale Start Template zum Erstellen eines Team Webs in Autodesk Inventor
+nav:
+  - Hot Dogs:
+    - Sortiment: hotdog-sortiment.md
+    - Geschichte des Hot Dogs: hotdog-geschichte.md
+  - Haustiere: haustiere.md
+  - Blog:
+    - blog/index.md
+
+# https://www.mkdocs.org/user-guide/configuration/#not_in_nav
+not_in_nav: |
+  /index.md
+
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  logo: assets/firmenlogo.svg
+  language: de
+  palette:
+    # Rotes Farbschema als Standard
+    - scheme: default
+      primary: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Indigo Farbschema im Dark-Mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+
+extra:
+  generator: false      # Unterdrückt die Eigenwerbung von MKDocs als Text im Footer der Webseite
+  homepage: index.html  # Sorgt dafür, dass bei einem Klick auf das Firmenlogo wieder auf dir Startseite gelinkt wird.
+
+extra_css:
+  - assets/css/extra.css  # Einbinden von zusätzlichen CSS Anweisungen zur Anpassung bestimmter HTML elemente.
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - abbr
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - table-reader
+  - offline
+  - glightbox:
+      loop: false
+      draggable: false
+  - blog:
+      blog_toc: false
+      post_readtime: true
+      draft: false
+      draft_on_serve: true
+      authors_file: blog/.authors.yml
+      categories: true
+      categories_allowed:
+        - General
+        - Vault
+        - Inventor
+        - FLC
+        - Instructions
+        - Responsibilities
+        - Documents
+        - Processes
+        - Tutorial
+
+# Footer Text am unteren Bildschirmrand
+copyright: Template für ein Team Web in Autodesk Inventor erstellt. Siehe zugehörigen Blogpost <a target="_blank" style="color:var(--md-primary-fg-color)" href="https://jbetzen.net/posts/inventor-teamweb/">jbetzen.net - Team Web in Inventor mit MKDocs</a>
