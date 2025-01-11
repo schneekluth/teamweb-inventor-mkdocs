@@ -118,4 +118,4 @@ plugins:
         - Tutorial
 
 # Footer Text am unteren Bildschirmrand
-copyright: Template für ein Team Web in Autodesk Inventor erstellt. Siehe zugehörigen Blogpost <a target="_blank" style="color:var(--md-primary-fg-color)" href="https://jbetzen.net/posts/inventor-teamweb/">jbetzen.net - Team Web in Inventor mit MKDocs</a>
+copyright: 'Template für ein Team Web in Autodesk Inventor. Siehe zugehörigen Blogpost: <a target="_blank" style="color:var(--md-primary-fg-color)" href="https://jbetzen.net/posts/inventor-teamweb/">jbetzen.net - Team Web in Inventor mit MKDocs</a>'
