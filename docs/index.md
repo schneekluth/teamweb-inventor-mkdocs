@@ -1,6 +1,6 @@
 ---
-title: Welcome
-description: Landing Page of TRG's Knowledge Hub 
+title: Willkommen
+description: Startseite 
 hide:
   - navigation
   - toc
