@@ -42,6 +42,11 @@ theme:
     - content.code.copy
     - content.code.annotate
 
+# Lädt den Entwicklungsserver neu, wenn Änderungen an den Dateien im Ordner 'includes' erfolgen
+# https://www.mkdocs.org/user-guide/configuration/#watch
+watch:
+  - includes
+
 extra:
   generator: false      # Unterdrückt die Eigenwerbung von MKDocs als Text im Footer der Webseite
   homepage: index.html  # Sorgt dafür, dass bei einem Klick auf das Firmenlogo wieder auf dir Startseite gelinkt wird.
