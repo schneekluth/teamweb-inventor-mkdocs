@@ -1,6 +1,6 @@
 ---
 title: Willkommen
-description: Startseite 
+description: Startseite
 hide:
   - navigation
   - toc
@@ -10,7 +10,7 @@ glightbox: false
 ---
 
 #
-<center>
+<center markdown>
 
 <figure markdown>
   ![Image title](assets/banner.jpg){: style="width:480px" }
