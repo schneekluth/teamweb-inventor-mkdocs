@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    // Markdown
+    "yzhang.markdown-all-in-one",
+    "shardulm94.trailing-spaces",
+
+    // Spell and character checking
+    "streetsidesoftware.code-spell-checker",
+    "nhoizey.gremlins",
+
+    // Git
+    "mhutchie.git-graph",
+
+    // Powershell Extension for Teamweb Assistant
+    "ms-vscode.powershell",
+
+    // Python for MkDocs
+    "ms-python.python",
+
+    // CSV Files
+    "mechatroner.rainbow-csv",
+
+    // Region Viewer for Markdown Chapters and reference-style links
+    "SantaCodes.santacodes-region-viewer"
+  ]
+}
