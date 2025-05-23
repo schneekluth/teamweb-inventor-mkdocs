@@ -12,9 +12,7 @@ search:
 
 ## Hotdogs
 !!! info ""
-    [Tabellen :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material/reference/data-tables/) können einfach in Markdown geschrieben und formatiert werden.
-
-    Es besteht auch die Möglichkeit Excel-Dokumente einzulesen, was im Beispiel der [Beilagen](#beilagen) erläutert wird.
+    [Tabellen :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material/reference/data-tables/) können einfach in Markdown geschrieben und formatiert werden. Es besteht auch die Möglichkeit Excel-Dokumente einzulesen, was im Beispiel der [Beilagen](#beilagen) erläutert wird.
 
 | Hot Dog (linkbündig) | Preis (rechtsbündig) | Anmerkung (zentriert)     |
 | -------------------- | -------------------: | :-----------------------: |
@@ -33,6 +31,8 @@ read_excel('../includes/beispiel.xlsx', engine='openpyxl', sheet_name="Beilagen"
 **Das Ergebnis:**
 
 {{ read_excel('../includes/beispiel.xlsx', engine='openpyxl', sheet_name="Beilagen") }}
+
+Neben dem sperrigen Excel-Format können viele weitere Formate eingelesen werden: [Basic Readers](https://timvink.github.io/mkdocs-table-reader-plugin/readers/#basic-readers){: target="_blank"}
 
 ## Serviervorschlag
 ### Guacamole
